@@ -4,7 +4,7 @@ import { MoonIcon } from '@chakra-ui/icons';
 import { Icon } from '@chakra-ui/react';
 import { MdWbSunny } from 'react-icons/md';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['About Me', 'Experience', 'Blog', 'Contact'];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -15,7 +15,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700')
     }}
-    href={'#'}
+    href={children.toString() == 'About Me' ? 'aboutMe' : children.toString().toLowerCase()}
   >
     {children}
   </Link>
@@ -25,7 +25,7 @@ function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('teal.100', 'teal.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'center'}>
           <HStack spacing={8} alignItems={'center'}>
             {Links.map((link) => (
