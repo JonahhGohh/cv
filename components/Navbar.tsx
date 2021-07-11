@@ -46,9 +46,6 @@ const NavLink = (props: NavLinkProps) => {
           textDecoration: 'none',
           bg: link.bg
         }}
-        _activeLink={{
-          color: link.color
-        }}
         onClick={() => props.onClose()}
       >
         {props.name}
