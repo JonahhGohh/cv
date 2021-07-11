@@ -7,7 +7,7 @@ export default function About() {
   const { colorMode } = useColorMode();
   return (
     <>
-      <Flex justifyContent={'center'} flexDirection={'column'} mt={5}>
+      <Flex justifyContent={'center'} flexDirection={'column'}>
         <Box>
           <Heading ml={[0, 0, 3]}>
             <Flex alignItems="center" mb={-5}>
@@ -19,11 +19,11 @@ export default function About() {
           </Heading>
           <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
             <Text fontSize="3xl" textAlign="justify">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
             </Text>
             <Text textAlign="justify">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-              a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen book.
             </Text>
           </VStack>
         </Box>
