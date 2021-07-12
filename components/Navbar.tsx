@@ -112,7 +112,7 @@ export default function Navbar() {
             <IconButton
               icon={colorMode == 'dark' ? <Icon as={FaSun} /> : <Icon as={FaMoon} />}
               onClick={toggleColorMode}
-              aria-label={'Github account'}
+              aria-label={'Toggle color mode'}
               bg={useColorModeValue('white', 'gray.700')}
               _hover={{
                 textDecoration: 'none',
